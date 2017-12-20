@@ -1,0 +1,168 @@
+// [devman] 2017.12.19
+// 목록 형태의 Page에서 사용된다. ex) index.html
+
+.page[index] {
+    a {
+        color: #4d78cc;
+        transition: 0.5s ease;
+        &:hover {
+            color: #fff;
+        }
+    }
+    .left {
+        >ul {
+            padding: 0;
+            >li {
+                list-style: none;
+            }
+            li {
+                color: #5c6370; // [devman] 2017.12.19
+                h2 {
+                    border: none;
+                    font-size: 27px;
+                    margin: 0;
+                }
+                // post의 상단에 위치한 정보 영역
+                .label {
+                    margin-bottom: 15px;
+                    overflow: hidden;
+                    .label-card {
+                        float: left;
+                        margin-right: 15px;
+                        //font-family: 'Roboto';
+                        i {
+                            padding-right: 0;
+                            margin-right: 3px;
+                            color: #5c6370; // [devman] 2017.12.19
+                        }
+                    }
+                    .categories {
+                        padding: 0;
+                    }
+                }
+                .excerpt {
+                    h2 {
+                        font-size: 24px;
+                    }
+                    h3 {
+                        font-size: 22px;
+                    }
+                    h4 {
+                        font-size: 20px;
+                    }
+                }
+                .read-all {
+                    text-align: right;
+                    font-size: 14px;
+                    a {
+                        color: rgba(163,185,229,0.7);   // #a3b9e5;
+                        transition: 0.2s ease;
+                        &:hover {
+                            color: rgba(77,120,204,0.9);// #4d78cc;
+                        }
+                        i {
+                            padding-right: 3px;
+                        }
+                    }
+                }
+            }
+        }
+        .pagination {
+            text-align: center;
+            .previous,
+            .next {
+                font-size: 20px;
+                padding: 0 5px;
+            }
+            .page_number {
+                padding: 0 5px;
+            }
+            .disable {
+                color: #cbcbcb;
+            }
+        }
+    }
+    // right side part
+    .right {
+        .wrap {
+            .side {
+                margin-bottom: 20px;
+                padding-bottom: 0;
+                i {
+                    margin-right: 3px;
+                }
+                // categories
+                .content-ul[cate] {
+                    overflow: hidden;
+                    list-style: none;
+                    margin: 0;
+                    padding: 10px 0 10px 10px;
+                    font-size: 14px;
+                    li {
+                        height: 24px;
+                        a {
+                            padding: 2px 0;
+                            &:hover {
+                                border-radius: 2px;
+                                background-color: #3c414e;
+                                color: #d7dae0;
+                            }
+                            .name {
+                                padding-left: 5px;
+                            }
+                            .badge {
+                                text-align: center;
+                                padding: 0 10px;
+                                color: #fff;
+                            }
+                        }
+                        &:last-of-type a {
+                            border: none;
+                        }
+                    }
+                }
+                // recent posts
+                .content-ul[recent]{
+                    li{
+                        font-size: 14px;
+                    }
+                }
+                // tags
+                .tags-cloud {
+                    font-weight: normal;
+                    a {
+                        padding: 2px 3px;
+                        border-radius: 2px;
+                        &:hover {
+                            background-color: #21252b;
+                            box-shadow: inset 1px 1px #4d78cc, inset -1px -1px #4d78cc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 770px) {
+    .page[index] {
+        .left>ul li {
+            h2 {
+                font-size: 22px;
+            }
+            .excerpt {
+                h2 {
+                    font-size: 20px;
+                }
+                h3 {
+                    font-size: 18px;
+                }
+                h4 {
+                    font-size: 16px;
+                }
+                li{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

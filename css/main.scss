@@ -1,0 +1,62 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset  "utf-8"; //
+//
+//
+// // Our variables
+// $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $base-font-weight: 400;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+//
+// $spacing-unit:     30px;
+//
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+//
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+//
+// // Width of the content area
+// $content-width:    800px;
+//
+// $on-palm:          600px;
+// $on-laptop:        800px;
+//
+//
+//
+// // Use media queries like this:
+// // @include media-query($on-palm) {
+// //     .wrapper {
+// //         padding-right: $spacing-unit / 2;
+// //         padding-left: $spacing-unit / 2;
+// //     }
+// // }
+// @mixin media-query($device) {
+//     @media screen and (max-width: $device) {
+//         @content;
+//     }
+// }
+
+// [devman] 2017.12.19 theme에서 사용되는 색상을 정의한다.
+// top-line   : #181a1f  , header의 하단의 구분선에서 사용된다.
+// div-line   : #3c4049  , 구분선
+// work-back  : #282c34  , 작업 공간의 색상
+// back       : #21252b  , 전체적인 공간의 색상, 매우 어두운...색상
+// text       : #9d9d9d  , 일반적인 텍스트의 색상
+// text-light : #cccfd5  , 밝은 텍스트
+// text-comment: #5c6370 ,
+// button-back:  #4d78cc , 밝은 파랑
+// button-fore:  #a3b9e5 , 밝은 파랑의 전경색
+
+/*
+ * variables
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400|Roboto:300,400');
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "reset", "header", "post", "page", "syntax-highlighting", "index", "demo", "footer", "scrollbar", "backToTop";

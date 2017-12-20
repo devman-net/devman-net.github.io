@@ -1,0 +1,51 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: devman.net
+brief-intro: Dev Engineer
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://devman.net" # the base hostname & protocol for your site
+
+permalink: /:year/:month/:day/:title/
+
+# other links
+twitter_username:
+facebook_username:
+github_username:  devman-net
+linkedIn_username:
+dribbble_username:
+email: devman@devman.net
+
+description_footer: devman.net
+
+# comments
+disqus_shortname: devman-net
+
+# statistic analysis
+google_analytics_id: UA-111422302-1
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# port
+# port: 1234
+
+# url
+category_dir: category/
+tag_dir: tag/
+
+# excerpt
+excerpt_separator: "\n\n\n\n"
+
+# paginate
+gems: [jekyll-paginate]
+paginate: 6
