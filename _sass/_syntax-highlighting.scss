@@ -1,6 +1,8 @@
 /**
  * Syntax highlighting styles
  */
+
+/* [devman] 2018.10.24 change of the background color #272822 -> #21252b */
 code{
     padding: 2px 4px 1px 4px;
     margin: 0 2px;
@@ -8,8 +10,8 @@ code{
     border-radius: 2px;
     color: #6f7682;
     //background-color: rgba(0, 0, 0, 0.06);
-    background-color: #2f353e;
-    border: 1px solid #21252b;
+    background-color: #21252b; /* [devman] 2018.10.24 #272822; */
+    border: 1px solid #211a1f; /* [devman] 2018.10.24 #21252b; */
     font-family: Monaco,Menlo,Consolas,"Courier New",monospace,sans-serif;
 }
 
@@ -24,17 +26,17 @@ pre {
          margin: 0;
          padding: 0;
         font-size: 13px;
-        color:#d1d1c9;
+        color:#a6adbf;  /* [devman] 2018.10.24 #d1d1c9; */
         border: none;
-        background-color: #272822
+        background-color: #21252b; /* [devman] 2018.10.24 #272822; */
      }
 }
 
 .highlight {
     border-radius: 3px;
-
-    background: #272822;
-    .hll { background-color: #272822; }
+    line-height: 1.2; /* [devman] 2018.10.24 */
+    background: #21252b; /* [devman] 2018.10.24 #272822; */
+    .hll { background-color: #21252b;/* [devman] 2018.10.24 #272822; */ }
     .c { color: #75715e } /* Comment */
     .err { color: #960050; background-color: #1e0010 } /* Error */
     .k { color: #66d9ef } /* Keyword */
