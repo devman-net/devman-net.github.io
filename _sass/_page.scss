@@ -22,8 +22,8 @@
         padding: 20px 30px;
         line-height: 1.6;
         font-size: 16px;
-        background-color: #282c34;  // [devman] 2017.12.19
-        border: 1px solid #181a1f;  // [devman] 2017.12.19
+        background-color: #282c34;  /* [devman] 2017.12.19 */
+        border: 1px solid #181a1f;  /* [devman] 2017.12.19 */
 
         h1 {
             margin-bottom: -10px;
@@ -116,8 +116,8 @@
         }
         .side {
             box-sizing: border-box;
-            background-color: #282c34;  // [devman] 2017.12.19
-            border: 1px solid #181a1f;  // [devman] 2017.12.19
+            background-color: #282c34;  /* [devman] 2017.12.19 */
+            border: 1px solid #181a1f;  /* [devman] 2017.12.19 */
             padding-bottom: 1px;
             -ms-word-break: break-all;
             word-break: break-all;
@@ -153,6 +153,17 @@
             }
         }
     }
+    /* [devman] 2018.10.24 add for preview >> */
+    .preview {
+        color:inherit;
+        //border-left: 0;
+        background-color: inherit;
+        border: 1px solid #5c6370;  // color: text-comment (ref main.scss)
+        //padding-left: 0;
+        //padding: 0;
+        margin: 0 0 20px;
+    }
+    /* [devman] 2018.10.24 << */
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {
     .page {
