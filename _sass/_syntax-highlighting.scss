@@ -6,13 +6,14 @@
 code{
     padding: 2px 4px 1px 4px;
     margin: 0 2px;
-    font-size: 90%;
+    //font-size: 100%;
     border-radius: 2px;
     color: #6f7682;
     //background-color: rgba(0, 0, 0, 0.06);
     background-color: #21252b; /* [devman] 2018.10.24 #272822; */
     border: 1px solid #211a1f; /* [devman] 2018.10.24 #21252b; */
-    font-family: Monaco,Menlo,Consolas,"Courier New",monospace,sans-serif;
+    font-family: 'Nanum Gothic Coding', monospace, sans-serif, Monaco,Menlo,Consolas,"Courier New";
+
 }
 
 pre {
