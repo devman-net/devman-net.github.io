@@ -2,7 +2,7 @@
 layout: post
 title:  Linux Deploy - Ubuntu 설치
 categories: Etc
-tags: linux-deploy busy-box
+tags: linux-deploy busy-box ubuntu
 ---
 
 * content
